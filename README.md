@@ -186,7 +186,7 @@ class SahilMukadam:
 <table>
   <tr>
     <td width="50%">
-      <h3 align="center">🚦 Traffic Congestion & Digital Twin</h3>
+      <h3 align="center">🚦 Traffic Congestion AI & Digital Twin</h3>
       <p align="center">
         <a href="https://github.com/SahilMukadam/Traffic_Congestion_Management">
           <img src="https://img.shields.io/badge/VIEW_REPO-6c63ff?style=for-the-badge&logo=github&logoColor=white"/>
