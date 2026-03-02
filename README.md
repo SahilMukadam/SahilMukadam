@@ -1,4 +1,10 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b4b,100:6c63ff&height=220&section=header&text=Sahil%20Mukadam&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI/ML%20Engineer%20%7C%20Data%20Scientist%20%7C%20Building%20Intelligent%20Systems&descAlignY=55&descSize=18&descColor=a9b1d6"/>
+<!-- 
+  SETUP: Place 'header-binary-rain.svg' in the root of your SahilMukadam repo.
+  The path below assumes it's in the same repo as this README.
+-->
+<p align="center">
+  <img width="100%" src="./header-binary-rain.svg" alt="Sahil Mukadam — AI/ML Engineer | Data Scientist"/>
+</p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/sahil-mukadam/"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
@@ -8,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&multiline=true&repeat=true&width=850&height=100&lines=%3E+Training+models.+Engineering+pipelines.+Shipping+AI.;%3E+MSc+Computer+Science+(Distinction)+%7C+QMUL+London;%3E+From+data+to+decisions+%E2%80%94+end+to+end." alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&multiline=true&repeat=true&width=650&height=100&lines=%3E+Training+models.+Engineering+pipelines.+Shipping+AI.;%3E+MSc+Computer+Science+(Distinction)+%7C+QMUL+London;%3E+From+data+to+decisions+%E2%80%94+end+to+end." alt="Typing SVG" /></a>
 </p>
 
 ---
@@ -186,7 +192,7 @@ class SahilMukadam:
 <table>
   <tr>
     <td width="50%">
-      <h3 align="center">🚦 Traffic Congestion AI & Digital Twin</h3>
+      <h3 align="center">🚦 Traffic Congestion & Digital Twin</h3>
       <p align="center">
         <a href="https://github.com/SahilMukadam/Traffic_Congestion_Management">
           <img src="https://img.shields.io/badge/VIEW_REPO-6c63ff?style=for-the-badge&logo=github&logoColor=white"/>
@@ -315,4 +321,6 @@ Replace the solo Top Languages card above with this side-by-side layout:
   <a href="https://github.com/SahilMukadam"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b4b,100:6c63ff&height=120&section=footer"/>
+<p align="center">
+  <img width="100%" src="./footer-binary-rain.svg" alt="Footer"/>
+</p>
