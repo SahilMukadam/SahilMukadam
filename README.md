@@ -247,7 +247,7 @@ class SahilMukadam:
 <table>
   <tr>
     <td width="50%">
-      <h3 align="center">🚦 Traffic Congestion & Digital Twin</h3>
+      <h3 align="center">🚦 Traffic Congestion AI & Digital Twin</h3>
       <p align="center">
         <a href="https://github.com/SahilMukadam/Traffic_Congestion_Management">
           <img src="https://img.shields.io/badge/VIEW_REPO-6c63ff?style=for-the-badge&logo=github&logoColor=white"/>
@@ -349,11 +349,12 @@ Replace the solo Top Languages card above with this side-by-side layout:
 </p>
 
 --- STEP 2: Streak Stats ---
-
+-->
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=SahilMukadam&theme=tokyonight&hide_border=true&background=0d1117&ring=6c63ff&fire=6c63ff&currStreakLabel=6c63ff" alt="GitHub Streak"/>
 </p>
 
+<!--
 --- STEP 3: Activity Graph ---
 
 <p align="center">
