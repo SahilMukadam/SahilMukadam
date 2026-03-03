@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" preserveAspectRatio="xMidYMid meet">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -7,130 +7,90 @@
     </linearGradient>
   </defs>
 
-  <!-- Background with animated wave bottom edge -->
+  <!-- Animated waving background -->
   <path fill="url(#bg)">
-    <animate
-      attributeName="d"
-      dur="8s"
-      repeatCount="indefinite"
+    <animate attributeName="d" dur="8s" repeatCount="indefinite"
       values="
         M0,0 L1200,0 L1200,230 Q1050,280 900,240 Q750,200 600,240 Q450,280 300,240 Q150,200 0,250 Z;
         M0,0 L1200,0 L1200,240 Q1050,200 900,250 Q750,280 600,230 Q450,200 300,250 Q150,280 0,230 Z;
         M0,0 L1200,0 L1200,235 Q1050,270 900,235 Q750,210 600,250 Q450,270 300,230 Q150,210 0,260 Z;
         M0,0 L1200,0 L1200,230 Q1050,280 900,240 Q750,200 600,240 Q450,280 300,240 Q150,200 0,250 Z
       "
-      calcMode="spline"
-      keySplines="0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1"
-    />
+      calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1"/>
   </path>
 
-  <!-- Falling binary columns -->
-  <!-- Column 1 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#6c63ff" opacity="0.12">
+  <!-- Binary rain — higher opacity gray/silver for mobile visibility -->
+  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.25">
     <tspan x="30" y="-20">1</tspan><tspan x="30" dy="18">0</tspan><tspan x="30" dy="18">1</tspan><tspan x="30" dy="18">1</tspan><tspan x="30" dy="18">0</tspan><tspan x="30" dy="18">0</tspan><tspan x="30" dy="18">1</tspan><tspan x="30" dy="18">0</tspan><tspan x="30" dy="18">1</tspan><tspan x="30" dy="18">1</tspan><tspan x="30" dy="18">0</tspan><tspan x="30" dy="18">1</tspan><tspan x="30" dy="18">0</tspan><tspan x="30" dy="18">1</tspan><tspan x="30" dy="18">1</tspan><tspan x="30" dy="18">0</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -100" to="0 280" dur="6s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 2 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#a9b1d6" opacity="0.08">
-    <tspan x="80" y="-50">0</tspan><tspan x="80" dy="18">1</tspan><tspan x="80" dy="18">0</tspan><tspan x="80" dy="18">0</tspan><tspan x="80" dy="18">1</tspan><tspan x="80" dy="18">1</tspan><tspan x="80" dy="18">0</tspan><tspan x="80" dy="18">1</tspan><tspan x="80" dy="18">0</tspan><tspan x="80" dy="18">1</tspan><tspan x="80" dy="18">1</tspan><tspan x="80" dy="18">0</tspan><tspan x="80" dy="18">1</tspan><tspan x="80" dy="18">0</tspan><tspan x="80" dy="18">1</tspan><tspan x="80" dy="18">0</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.20">
+    <tspan x="105" y="-50">0</tspan><tspan x="105" dy="18">1</tspan><tspan x="105" dy="18">0</tspan><tspan x="105" dy="18">0</tspan><tspan x="105" dy="18">1</tspan><tspan x="105" dy="18">1</tspan><tspan x="105" dy="18">0</tspan><tspan x="105" dy="18">1</tspan><tspan x="105" dy="18">0</tspan><tspan x="105" dy="18">1</tspan><tspan x="105" dy="18">1</tspan><tspan x="105" dy="18">0</tspan><tspan x="105" dy="18">1</tspan><tspan x="105" dy="18">0</tspan><tspan x="105" dy="18">1</tspan><tspan x="105" dy="18">0</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -60" to="0 320" dur="8s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 3 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#6c63ff" opacity="0.15">
-    <tspan x="140" y="-30">1</tspan><tspan x="140" dy="18">1</tspan><tspan x="140" dy="18">0</tspan><tspan x="140" dy="18">1</tspan><tspan x="140" dy="18">0</tspan><tspan x="140" dy="18">0</tspan><tspan x="140" dy="18">1</tspan><tspan x="140" dy="18">0</tspan><tspan x="140" dy="18">1</tspan><tspan x="140" dy="18">1</tspan><tspan x="140" dy="18">0</tspan><tspan x="140" dy="18">0</tspan><tspan x="140" dy="18">1</tspan><tspan x="140" dy="18">1</tspan><tspan x="140" dy="18">0</tspan><tspan x="140" dy="18">1</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.28">
+    <tspan x="180" y="-30">1</tspan><tspan x="180" dy="18">1</tspan><tspan x="180" dy="18">0</tspan><tspan x="180" dy="18">1</tspan><tspan x="180" dy="18">0</tspan><tspan x="180" dy="18">0</tspan><tspan x="180" dy="18">1</tspan><tspan x="180" dy="18">0</tspan><tspan x="180" dy="18">1</tspan><tspan x="180" dy="18">1</tspan><tspan x="180" dy="18">0</tspan><tspan x="180" dy="18">0</tspan><tspan x="180" dy="18">1</tspan><tspan x="180" dy="18">1</tspan><tspan x="180" dy="18">0</tspan><tspan x="180" dy="18">1</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -40" to="0 300" dur="5s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 4 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#a9b1d6" opacity="0.06">
-    <tspan x="200" y="-80">0</tspan><tspan x="200" dy="18">0</tspan><tspan x="200" dy="18">1</tspan><tspan x="200" dy="18">0</tspan><tspan x="200" dy="18">1</tspan><tspan x="200" dy="18">1</tspan><tspan x="200" dy="18">0</tspan><tspan x="200" dy="18">1</tspan><tspan x="200" dy="18">1</tspan><tspan x="200" dy="18">0</tspan><tspan x="200" dy="18">0</tspan><tspan x="200" dy="18">1</tspan><tspan x="200" dy="18">0</tspan><tspan x="200" dy="18">1</tspan><tspan x="200" dy="18">0</tspan><tspan x="200" dy="18">1</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.18">
+    <tspan x="260" y="-80">0</tspan><tspan x="260" dy="18">0</tspan><tspan x="260" dy="18">1</tspan><tspan x="260" dy="18">0</tspan><tspan x="260" dy="18">1</tspan><tspan x="260" dy="18">1</tspan><tspan x="260" dy="18">0</tspan><tspan x="260" dy="18">1</tspan><tspan x="260" dy="18">1</tspan><tspan x="260" dy="18">0</tspan><tspan x="260" dy="18">0</tspan><tspan x="260" dy="18">1</tspan><tspan x="260" dy="18">0</tspan><tspan x="260" dy="18">1</tspan><tspan x="260" dy="18">0</tspan><tspan x="260" dy="18">1</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -90" to="0 350" dur="9s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 5 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#6c63ff" opacity="0.10">
-    <tspan x="270" y="-10">1</tspan><tspan x="270" dy="18">0</tspan><tspan x="270" dy="18">0</tspan><tspan x="270" dy="18">1</tspan><tspan x="270" dy="18">1</tspan><tspan x="270" dy="18">0</tspan><tspan x="270" dy="18">1</tspan><tspan x="270" dy="18">0</tspan><tspan x="270" dy="18">0</tspan><tspan x="270" dy="18">1</tspan><tspan x="270" dy="18">1</tspan><tspan x="270" dy="18">0</tspan><tspan x="270" dy="18">1</tspan><tspan x="270" dy="18">0</tspan><tspan x="270" dy="18">1</tspan><tspan x="270" dy="18">0</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.22">
+    <tspan x="340" y="-10">1</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">0</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -20" to="0 290" dur="7s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 6 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#a9b1d6" opacity="0.09">
-    <tspan x="340" y="-60">0</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">0</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">1</tspan><tspan x="340" dy="18">0</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.24">
+    <tspan x="420" y="-60">0</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">0</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -70" to="0 330" dur="6.5s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 7 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#6c63ff" opacity="0.13">
-    <tspan x="420" y="-40">1</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">1</tspan><tspan x="420" dy="18">0</tspan><tspan x="420" dy="18">1</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.26">
+    <tspan x="500" y="-40">1</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">1</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -50" to="0 310" dur="5.5s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 8 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#a9b1d6" opacity="0.07">
-    <tspan x="500" y="-90">0</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">0</tspan><tspan x="500" dy="18">1</tspan><tspan x="500" dy="18">0</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.19">
+    <tspan x="580" y="-90">0</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">0</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -100" to="0 360" dur="8.5s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 9 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#6c63ff" opacity="0.11">
-    <tspan x="580" y="-20">1</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">1</tspan><tspan x="580" dy="18">0</tspan><tspan x="580" dy="18">1</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.23">
+    <tspan x="660" y="-20">1</tspan><tspan x="660" dy="18">1</tspan><tspan x="660" dy="18">0</tspan><tspan x="660" dy="18">0</tspan><tspan x="660" dy="18">1</tspan><tspan x="660" dy="18">0</tspan><tspan x="660" dy="18">1</tspan><tspan x="660" dy="18">1</tspan><tspan x="660" dy="18">0</tspan><tspan x="660" dy="18">0</tspan><tspan x="660" dy="18">1</tspan><tspan x="660" dy="18">0</tspan><tspan x="660" dy="18">1</tspan><tspan x="660" dy="18">1</tspan><tspan x="660" dy="18">0</tspan><tspan x="660" dy="18">1</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -30" to="0 290" dur="6.2s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 10 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#a9b1d6" opacity="0.08">
-    <tspan x="650" y="-70">0</tspan><tspan x="650" dy="18">0</tspan><tspan x="650" dy="18">1</tspan><tspan x="650" dy="18">1</tspan><tspan x="650" dy="18">0</tspan><tspan x="650" dy="18">1</tspan><tspan x="650" dy="18">0</tspan><tspan x="650" dy="18">0</tspan><tspan x="650" dy="18">1</tspan><tspan x="650" dy="18">1</tspan><tspan x="650" dy="18">0</tspan><tspan x="650" dy="18">1</tspan><tspan x="650" dy="18">0</tspan><tspan x="650" dy="18">1</tspan><tspan x="650" dy="18">1</tspan><tspan x="650" dy="18">0</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.21">
+    <tspan x="740" y="-70">0</tspan><tspan x="740" dy="18">0</tspan><tspan x="740" dy="18">1</tspan><tspan x="740" dy="18">1</tspan><tspan x="740" dy="18">0</tspan><tspan x="740" dy="18">1</tspan><tspan x="740" dy="18">0</tspan><tspan x="740" dy="18">0</tspan><tspan x="740" dy="18">1</tspan><tspan x="740" dy="18">1</tspan><tspan x="740" dy="18">0</tspan><tspan x="740" dy="18">1</tspan><tspan x="740" dy="18">0</tspan><tspan x="740" dy="18">1</tspan><tspan x="740" dy="18">1</tspan><tspan x="740" dy="18">0</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -80" to="0 340" dur="7.8s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 11 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#6c63ff" opacity="0.14">
-    <tspan x="730" y="-45">1</tspan><tspan x="730" dy="18">0</tspan><tspan x="730" dy="18">1</tspan><tspan x="730" dy="18">0</tspan><tspan x="730" dy="18">1</tspan><tspan x="730" dy="18">0</tspan><tspan x="730" dy="18">0</tspan><tspan x="730" dy="18">1</tspan><tspan x="730" dy="18">1</tspan><tspan x="730" dy="18">0</tspan><tspan x="730" dy="18">1</tspan><tspan x="730" dy="18">0</tspan><tspan x="730" dy="18">1</tspan><tspan x="730" dy="18">1</tspan><tspan x="730" dy="18">0</tspan><tspan x="730" dy="18">1</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.27">
+    <tspan x="820" y="-45">1</tspan><tspan x="820" dy="18">0</tspan><tspan x="820" dy="18">1</tspan><tspan x="820" dy="18">0</tspan><tspan x="820" dy="18">1</tspan><tspan x="820" dy="18">0</tspan><tspan x="820" dy="18">0</tspan><tspan x="820" dy="18">1</tspan><tspan x="820" dy="18">1</tspan><tspan x="820" dy="18">0</tspan><tspan x="820" dy="18">1</tspan><tspan x="820" dy="18">0</tspan><tspan x="820" dy="18">1</tspan><tspan x="820" dy="18">1</tspan><tspan x="820" dy="18">0</tspan><tspan x="820" dy="18">1</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -55" to="0 315" dur="5.8s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 12 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#a9b1d6" opacity="0.06">
-    <tspan x="810" y="-15">0</tspan><tspan x="810" dy="18">1</tspan><tspan x="810" dy="18">0</tspan><tspan x="810" dy="18">1</tspan><tspan x="810" dy="18">1</tspan><tspan x="810" dy="18">0</tspan><tspan x="810" dy="18">0</tspan><tspan x="810" dy="18">1</tspan><tspan x="810" dy="18">0</tspan><tspan x="810" dy="18">1</tspan><tspan x="810" dy="18">1</tspan><tspan x="810" dy="18">0</tspan><tspan x="810" dy="18">1</tspan><tspan x="810" dy="18">0</tspan><tspan x="810" dy="18">0</tspan><tspan x="810" dy="18">1</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.17">
+    <tspan x="900" y="-15">0</tspan><tspan x="900" dy="18">1</tspan><tspan x="900" dy="18">0</tspan><tspan x="900" dy="18">1</tspan><tspan x="900" dy="18">1</tspan><tspan x="900" dy="18">0</tspan><tspan x="900" dy="18">0</tspan><tspan x="900" dy="18">1</tspan><tspan x="900" dy="18">0</tspan><tspan x="900" dy="18">1</tspan><tspan x="900" dy="18">1</tspan><tspan x="900" dy="18">0</tspan><tspan x="900" dy="18">1</tspan><tspan x="900" dy="18">0</tspan><tspan x="900" dy="18">0</tspan><tspan x="900" dy="18">1</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -25" to="0 285" dur="7.2s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 13 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#6c63ff" opacity="0.10">
-    <tspan x="890" y="-65">1</tspan><tspan x="890" dy="18">1</tspan><tspan x="890" dy="18">0</tspan><tspan x="890" dy="18">1</tspan><tspan x="890" dy="18">0</tspan><tspan x="890" dy="18">1</tspan><tspan x="890" dy="18">0</tspan><tspan x="890" dy="18">0</tspan><tspan x="890" dy="18">1</tspan><tspan x="890" dy="18">0</tspan><tspan x="890" dy="18">1</tspan><tspan x="890" dy="18">1</tspan><tspan x="890" dy="18">0</tspan><tspan x="890" dy="18">1</tspan><tspan x="890" dy="18">0</tspan><tspan x="890" dy="18">1</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.22">
+    <tspan x="980" y="-65">1</tspan><tspan x="980" dy="18">1</tspan><tspan x="980" dy="18">0</tspan><tspan x="980" dy="18">1</tspan><tspan x="980" dy="18">0</tspan><tspan x="980" dy="18">1</tspan><tspan x="980" dy="18">0</tspan><tspan x="980" dy="18">0</tspan><tspan x="980" dy="18">1</tspan><tspan x="980" dy="18">0</tspan><tspan x="980" dy="18">1</tspan><tspan x="980" dy="18">1</tspan><tspan x="980" dy="18">0</tspan><tspan x="980" dy="18">1</tspan><tspan x="980" dy="18">0</tspan><tspan x="980" dy="18">1</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -75" to="0 335" dur="6.8s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 14 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#a9b1d6" opacity="0.09">
-    <tspan x="960" y="-35">0</tspan><tspan x="960" dy="18">0</tspan><tspan x="960" dy="18">1</tspan><tspan x="960" dy="18">0</tspan><tspan x="960" dy="18">1</tspan><tspan x="960" dy="18">1</tspan><tspan x="960" dy="18">0</tspan><tspan x="960" dy="18">1</tspan><tspan x="960" dy="18">0</tspan><tspan x="960" dy="18">0</tspan><tspan x="960" dy="18">1</tspan><tspan x="960" dy="18">1</tspan><tspan x="960" dy="18">0</tspan><tspan x="960" dy="18">1</tspan><tspan x="960" dy="18">0</tspan><tspan x="960" dy="18">1</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.24">
+    <tspan x="1060" y="-35">0</tspan><tspan x="1060" dy="18">0</tspan><tspan x="1060" dy="18">1</tspan><tspan x="1060" dy="18">0</tspan><tspan x="1060" dy="18">1</tspan><tspan x="1060" dy="18">1</tspan><tspan x="1060" dy="18">0</tspan><tspan x="1060" dy="18">1</tspan><tspan x="1060" dy="18">0</tspan><tspan x="1060" dy="18">0</tspan><tspan x="1060" dy="18">1</tspan><tspan x="1060" dy="18">1</tspan><tspan x="1060" dy="18">0</tspan><tspan x="1060" dy="18">1</tspan><tspan x="1060" dy="18">0</tspan><tspan x="1060" dy="18">1</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -45" to="0 305" dur="5.3s" repeatCount="indefinite"/>
   </text>
-
-  <!-- Column 15 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#6c63ff" opacity="0.12">
-    <tspan x="1040" y="-85">1</tspan><tspan x="1040" dy="18">0</tspan><tspan x="1040" dy="18">0</tspan><tspan x="1040" dy="18">1</tspan><tspan x="1040" dy="18">1</tspan><tspan x="1040" dy="18">0</tspan><tspan x="1040" dy="18">1</tspan><tspan x="1040" dy="18">0</tspan><tspan x="1040" dy="18">1</tspan><tspan x="1040" dy="18">1</tspan><tspan x="1040" dy="18">0</tspan><tspan x="1040" dy="18">0</tspan><tspan x="1040" dy="18">1</tspan><tspan x="1040" dy="18">0</tspan><tspan x="1040" dy="18">1</tspan><tspan x="1040" dy="18">1</tspan>
+  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.25">
+    <tspan x="1140" y="-85">1</tspan><tspan x="1140" dy="18">0</tspan><tspan x="1140" dy="18">0</tspan><tspan x="1140" dy="18">1</tspan><tspan x="1140" dy="18">1</tspan><tspan x="1140" dy="18">0</tspan><tspan x="1140" dy="18">1</tspan><tspan x="1140" dy="18">0</tspan><tspan x="1140" dy="18">1</tspan><tspan x="1140" dy="18">1</tspan><tspan x="1140" dy="18">0</tspan><tspan x="1140" dy="18">0</tspan><tspan x="1140" dy="18">1</tspan><tspan x="1140" dy="18">0</tspan><tspan x="1140" dy="18">1</tspan><tspan x="1140" dy="18">1</tspan>
     <animateTransform attributeName="transform" type="translate" from="0 -95" to="0 355" dur="7.5s" repeatCount="indefinite"/>
   </text>
 
-  <!-- Column 16 -->
-  <text font-family="'Courier New', monospace" font-size="14" fill="#a9b1d6" opacity="0.07">
-    <tspan x="1120" y="-25">0</tspan><tspan x="1120" dy="18">1</tspan><tspan x="1120" dy="18">1</tspan><tspan x="1120" dy="18">0</tspan><tspan x="1120" dy="18">0</tspan><tspan x="1120" dy="18">1</tspan><tspan x="1120" dy="18">0</tspan><tspan x="1120" dy="18">1</tspan><tspan x="1120" dy="18">1</tspan><tspan x="1120" dy="18">0</tspan><tspan x="1120" dy="18">1</tspan><tspan x="1120" dy="18">0</tspan><tspan x="1120" dy="18">0</tspan><tspan x="1120" dy="18">1</tspan><tspan x="1120" dy="18">1</tspan><tspan x="1120" dy="18">0</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 -35" to="0 295" dur="8.2s" repeatCount="indefinite"/>
-  </text>
+  <!-- Glow behind text -->
+  <ellipse cx="600" cy="105" rx="400" ry="65" fill="#6c63ff" opacity="0.07"/>
 
-  <!-- Subtle glow behind text -->
-  <ellipse cx="600" cy="110" rx="350" ry="60" fill="#6c63ff" opacity="0.06"/>
-
-  <!-- Main title -->
-  <text x="600" y="108" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">
+  <!-- Main title — larger font -->
+  <text x="600" y="105" font-family="'Segoe UI',Arial,sans-serif" font-size="60" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="3">
     Sahil Mukadam
   </text>
 
   <!-- Subtitle -->
-  <text x="600" y="152" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#a9b1d6" text-anchor="middle" letter-spacing="1">
+  <text x="600" y="152" font-family="'Segoe UI',Arial,sans-serif" font-size="18" fill="#a9b1d6" text-anchor="middle" letter-spacing="1">
     AI/ML Engineer  |  Data Scientist  |  Building Intelligent Systems
   </text>
 
@@ -138,5 +98,4 @@
   <rect x="808" y="138" width="2" height="18" fill="#6c63ff">
     <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
-
 </svg>
