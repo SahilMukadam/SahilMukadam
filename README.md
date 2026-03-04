@@ -368,7 +368,7 @@ Replace the solo Top Languages card above with this side-by-side layout:
 ### `> connect()`
 
 <p align="center">
-  <i>Open to collaborations on ML/AI projects, research, and building things that matter.</i>
+  <i>Open to collaborations on ML/AI projects, research, and building things that matter. </i>
 </p>
 
 <p align="center">
