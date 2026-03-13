@@ -88,7 +88,7 @@ class SahilMukadam:
   </table>
 </div>
 
-<h4 align="center">🧠 AI / ML & Data Science</h4>
+<h4 align="center">🧠 AI / ML and Data Science</h4>
 <div align="center">
   <table>
     <tr>
