@@ -88,7 +88,7 @@ class SahilMukadam:
   </table>
 </div>
 
-<h4 align="center">🧠 AI / ML and Data Science</h4>
+<h4 align="center">🧠 AI / ML & Data Science</h4>
 <div align="center">
   <table>
     <tr>
@@ -247,7 +247,7 @@ class SahilMukadam:
 <table>
   <tr>
     <td width="50%">
-      <h3 align="center">🚦 Traffic Congestion AI & Digital Twin</h3>
+      <h3 align="center">🚦 Traffic Congestion & Digital Twin</h3>
       <p align="center">
         <a href="https://github.com/SahilMukadam/Traffic_Congestion_Management">
           <img src="https://img.shields.io/badge/VIEW_REPO-6c63ff?style=for-the-badge&logo=github&logoColor=white"/>
@@ -266,18 +266,22 @@ class SahilMukadam:
       </p>
     </td>
     <td width="50%">
-      <h3 align="center">🧬 Alzheimer's Disease Prediction</h3>
+      <h3 align="center">⚖️ Legal/Policy Document Q&A — RAG</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/CLASSIFICATION-6c63ff?style=for-the-badge"/>
+        <a href="https://github.com/SahilMukadam/Legal_Policy_Document_Q-A_RAG">
+          <img src="https://img.shields.io/badge/VIEW_REPO-6c63ff?style=for-the-badge&logo=github&logoColor=white"/>
+        </a>
       </p>
       <p>
-        Classification model trained on <b>2,149 patient records</b> achieving <b>90.7% accuracy</b> with Decision Trees. Applied SVMs for comparison. Feature selection on clinical & lifestyle indicators for early detection.
+        Production-quality <b>RAG system</b> for legal document analysis. Upload contracts/policies → hybrid search (semantic + BM25 via <b>Reciprocal Rank Fusion</b>) → <b>cited answers</b> with exact source passages. Swappable LLM & vector store backends, conversation memory, and 60+ tests.
       </p>
       <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Decision Trees-FF6F00?style=flat-square"/>
-        <img src="https://img.shields.io/badge/SVM-EE4C2C?style=flat-square"/>
+        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+        <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white"/>
+        <img src="https://img.shields.io/badge/ChromaDB-FF6F00?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=google&logoColor=white"/>
+        <img src="https://img.shields.io/badge/60%2B_Tests-4CAF50?style=flat-square"/>
       </p>
     </td>
   </tr>
@@ -349,12 +353,11 @@ Replace the solo Top Languages card above with this side-by-side layout:
 </p>
 
 --- STEP 2: Streak Stats ---
--->
+
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=SahilMukadam&theme=tokyonight&hide_border=true&background=0d1117&ring=6c63ff&fire=6c63ff&currStreakLabel=6c63ff" alt="GitHub Streak"/>
 </p>
 
-<!--
 --- STEP 3: Activity Graph ---
 
 <p align="center">
@@ -368,7 +371,7 @@ Replace the solo Top Languages card above with this side-by-side layout:
 ### `> connect()`
 
 <p align="center">
-  <i>Open to collaborations on ML/AI projects, research, and building things that matter. </i>
+  <i>Open to collaborations on ML/AI projects, research, and building things that matter.</i>
 </p>
 
 <p align="center">
