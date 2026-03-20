@@ -281,6 +281,7 @@ class SahilMukadam:
         <img src="https://img.shields.io/badge/ChromaDB-FF6F00?style=flat-square"/>
         <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
         <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=google&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Claude-8E75B2?style=flat-square&logo=claude&logoColor=white"/>
         <img src="https://img.shields.io/badge/60%2B_Tests-4CAF50?style=flat-square"/>
       </p>
     </td>
@@ -342,29 +343,27 @@ class SahilMukadam:
 ║  🟢 STEP 4: Move Top Languages card into the side-by-side         ║
 ║             layout with GitHub Stats (replace the solo card        ║
 ║             above and delete the solo version)                     ║
-╚══════════════════════════════════════════════════════════════════════╝
+╚══════════════════════════════════════════════════════════════════════╝ -->
 
---- STEP 1: GitHub Stats Card ---
-Replace the solo Top Languages card above with this side-by-side layout:
+<!-- --- STEP 1: GitHub Stats Card ---
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=SahilMukadam&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0d1117&title_color=6c63ff&icon_color=6c63ff&text_color=a9b1d6" alt="GitHub Stats" height="170"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SahilMukadam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=6c63ff&text_color=a9b1d6" alt="Top Languages" height="170"/>
 </p>
 
---- STEP 2: Streak Stats ---
+<!-- --- STEP 2: Streak Stats --->
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=SahilMukadam&theme=tokyonight&hide_border=true&background=0d1117&ring=6c63ff&fire=6c63ff&currStreakLabel=6c63ff" alt="GitHub Streak"/>
 </p>
 
---- STEP 3: Activity Graph ---
+<!-- --- STEP 3: Activity Graph --->
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=SahilMukadam&bg_color=0d1117&color=6c63ff&line=6c63ff&point=a9b1d6&area=true&area_color=6c63ff&hide_border=true" alt="Activity Graph" width="95%"/>
 </p>
 
--->
 
 ---
 
