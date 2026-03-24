@@ -1,71 +1,152 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" preserveAspectRatio="xMidYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 170" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="bg-footer" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="50%" stop-color="#1a1b4b"/>
-      <stop offset="100%" stop-color="#6c63ff"/>
+    <linearGradient id="bg-f" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="40%" stop-color="#0d1f0d"/>
+      <stop offset="100%" stop-color="#003318"/>
     </linearGradient>
+    <pattern id="scan-f" width="1200" height="4" patternUnits="userSpaceOnUse">
+      <rect width="1200" height="1" fill="#00ff41" opacity="0.03"/>
+      <rect y="2" width="1200" height="1" fill="#00ff41" opacity="0.02"/>
+    </pattern>
   </defs>
 
-  <!-- Animated waving top edge -->
-  <path fill="url(#bg-footer)">
-    <animate attributeName="d" dur="8s" repeatCount="indefinite"
-      values="
-        M0,50 Q150,10 300,40 Q450,70 600,30 Q750,10 900,50 Q1050,70 1200,30 L1200,160 L0,160 Z;
-        M0,30 Q150,70 300,35 Q450,10 600,50 Q750,70 900,30 Q1050,10 1200,55 L1200,160 L0,160 Z;
-        M0,45 Q150,20 300,55 Q450,70 600,35 Q750,15 900,45 Q1050,65 1200,25 L1200,160 L0,160 Z;
-        M0,50 Q150,10 300,40 Q450,70 600,30 Q750,10 900,50 Q1050,70 1200,30 L1200,160 L0,160 Z
-      "
-      calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1"/>
-  </path>
+  <!-- Solid base (below the tear zone) -->
+  <rect y="55" width="1200" height="115" fill="url(#bg-f)"/>
 
-  <!-- Rising binary columns — gray/silver, higher opacity -->
-  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.25">
-    <tspan x="40" y="300">1</tspan><tspan x="40" dy="-18">0</tspan><tspan x="40" dy="-18">1</tspan><tspan x="40" dy="-18">1</tspan><tspan x="40" dy="-18">0</tspan><tspan x="40" dy="-18">0</tspan><tspan x="40" dy="-18">1</tspan><tspan x="40" dy="-18">0</tspan><tspan x="40" dy="-18">1</tspan><tspan x="40" dy="-18">1</tspan><tspan x="40" dy="-18">0</tspan><tspan x="40" dy="-18">1</tspan><tspan x="40" dy="-18">0</tspan><tspan x="40" dy="-18">1</tspan><tspan x="40" dy="-18">0</tspan><tspan x="40" dy="-18">1</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 100" to="0 -280" dur="6s" repeatCount="indefinite"/>
+  <!-- ==================== TORN GLITCH TOP EDGE — 3 LAYERS ==================== -->
+
+  <!-- LAYER 3 (deepest — dark shadow) -->
+  <polygon fill="#003318" opacity="0.7">
+    <animate attributeName="points" dur="6s" repeatCount="indefinite"
+      values="
+        0,45 40,38 80,52 120,35 165,50 200,32 245,48 285,38 330,55 370,35 415,50 455,38 500,52 540,35 585,50 625,38 670,55 710,35 755,50 795,38 840,52 880,35 925,50 965,38 1010,55 1050,35 1095,48 1135,38 1200,45 1200,0 0,0;
+        0,38 40,52 80,35 120,50 165,32 200,48 245,38 285,55 330,35 370,50 415,38 455,52 500,38 540,50 585,35 625,55 670,38 710,50 755,32 795,52 840,35 880,50 925,38 965,55 1010,35 1050,50 1095,38 1135,52 1200,38 1200,0 0,0;
+        0,52 40,35 80,48 120,55 165,38 200,50 245,35 285,48 330,38 370,55 415,35 455,50 500,55 540,38 585,48 625,35 670,50 710,55 755,38 795,48 840,38 880,52 925,35 965,50 1010,38 1050,55 1095,35 1135,48 1200,50 1200,0 0,0;
+        0,45 40,38 80,52 120,35 165,50 200,32 245,48 285,38 330,55 370,35 415,50 455,38 500,52 540,35 585,50 625,38 670,55 710,35 755,50 795,38 840,52 880,35 925,50 965,38 1010,55 1050,35 1095,48 1135,38 1200,45 1200,0 0,0
+      "
+      calcMode="discrete"/>
+  </polygon>
+
+  <!-- LAYER 2 (middle — emerald glow, glitch displaced) -->
+  <g>
+    <animate attributeName="transform" dur="4s" repeatCount="indefinite" attributeType="XML"
+      values="translate(0,0);translate(0,0);translate(4,0);translate(0,0);translate(-5,0);translate(0,0);translate(0,0);translate(7,0);translate(0,0);translate(0,0);translate(-3,0);translate(0,0);translate(0,0);translate(0,0);translate(6,0);translate(0,0);translate(0,0);translate(0,0);translate(-4,0);translate(0,0)"
+      calcMode="discrete"/>
+    <polygon fill="#00ff41" opacity="0.12">
+      <animate attributeName="points" dur="5s" repeatCount="indefinite"
+        values="
+          0,50 35,40 75,55 115,35 155,52 195,38 240,55 280,40 320,52 365,35 405,55 445,40 490,52 530,35 570,55 615,38 655,52 695,35 740,55 780,40 820,52 860,35 905,55 945,38 985,50 1025,35 1065,52 1110,40 1150,55 1200,45 1200,0 0,0;
+          0,40 35,55 75,35 115,52 155,38 195,55 240,40 280,52 320,35 365,55 405,38 445,52 490,35 530,55 570,40 615,52 655,35 695,55 740,38 780,52 820,35 860,55 905,40 945,52 985,38 1025,55 1065,35 1110,52 1150,40 1200,50 1200,0 0,0;
+          0,55 35,35 75,50 115,42 155,55 195,35 240,52 280,55 320,38 365,50 405,35 445,55 490,40 530,52 570,38 615,55 655,40 695,50 740,35 780,55 820,40 860,52 905,35 945,55 985,42 1025,50 1065,38 1110,55 1150,35 1200,48 1200,0 0,0;
+          0,50 35,40 75,55 115,35 155,52 195,38 240,55 280,40 320,52 365,35 405,55 445,40 490,52 530,35 570,55 615,38 655,52 695,35 740,55 780,40 820,52 860,35 905,55 945,38 985,50 1025,35 1065,52 1110,40 1150,55 1200,45 1200,0 0,0
+        "
+        calcMode="discrete"/>
+    </polygon>
+  </g>
+
+  <!-- LAYER 1 (top — bright neon, aggressive) -->
+  <g>
+    <animate attributeName="transform" dur="3s" repeatCount="indefinite" attributeType="XML"
+      values="translate(0,0);translate(0,0);translate(-6,0);translate(0,0);translate(0,0);translate(9,0);translate(0,0);translate(0,0);translate(-4,0);translate(0,0);translate(0,0);translate(0,0);translate(5,0);translate(0,0);translate(0,0);translate(-7,0);translate(0,0);translate(0,0);translate(0,0);translate(0,0)"
+      calcMode="discrete"/>
+    <polygon fill="#00ff41" opacity="0.06">
+      <animate attributeName="points" dur="3.5s" repeatCount="indefinite"
+        values="
+          0,48 55,38 90,55 135,32 170,52 215,38 255,55 300,35 340,52 385,38 425,55 465,35 510,52 550,38 590,55 640,32 680,50 720,38 760,55 805,35 845,52 885,38 930,55 970,35 1010,52 1055,38 1095,55 1140,35 1200,48 1200,0 0,0;
+          0,38 55,55 90,35 135,52 170,38 215,55 255,35 300,52 340,38 385,55 425,38 465,52 510,35 550,55 590,38 640,52 680,35 720,55 760,38 805,52 845,35 885,55 930,38 970,52 1010,35 1055,55 1095,38 1140,52 1200,38 1200,0 0,0;
+          0,55 55,35 90,48 135,55 170,35 215,50 255,38 300,55 340,48 385,35 425,52 465,55 510,38 550,48 590,35 640,55 680,38 720,52 760,35 805,55 845,38 885,50 930,35 970,55 1010,48 1055,38 1095,52 1140,55 1200,42 1200,0 0,0;
+          0,48 55,38 90,55 135,32 170,52 215,38 255,55 300,35 340,52 385,38 425,55 465,35 510,52 550,38 590,55 640,32 680,50 720,38 760,55 805,35 845,52 885,38 930,55 970,35 1010,52 1055,38 1095,55 1140,35 1200,48 1200,0 0,0
+        "
+        calcMode="discrete"/>
+    </polygon>
+  </g>
+
+  <!-- Scanline overlay -->
+  <rect width="1200" height="170" fill="url(#scan-f)">
+    <animate attributeName="y" from="0" to="4" dur="0.15s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Glitch bars -->
+  <rect x="0" y="90" width="1200" height="2" fill="#00ff41" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0.12;0;0;0;0.08;0;0" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="90;60;110;90;130;90" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="0" y="120" width="1200" height="2" fill="#ff0040" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.07;0;0;0;0;0.05;0;0" dur="2.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Glitch block artifacts near tear -->
+  <rect x="200" y="42" width="50" height="6" fill="#00ff41" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0.18;0;0;0;0;0;0;0;0;0.12;0;0;0;0;0;0;0" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="700" y="38" width="40" height="5" fill="#00e5ff" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;0.1;0;0;0;0;0;0;0;0;0;0.08;0;0;0;0" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="1000" y="45" width="55" height="4" fill="#ff0040" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;0;0;0.09;0;0;0;0;0;0;0;0;0.06;0;0;0" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- ==================== RISING SYMBOLS ==================== -->
+
+  <text font-family="'Courier New',monospace" font-size="15" fill="#00ff41" opacity="0.28">
+    <tspan x="45" y="310">∑</tspan><tspan x="45" dy="-18">ア</tspan><tspan x="45" dy="-18">◇</tspan><tspan x="45" dy="-18">ク</tspan><tspan x="45" dy="-18">§</tspan><tspan x="45" dy="-18">イ</tspan><tspan x="45" dy="-18">→</tspan><tspan x="45" dy="-18">¥</tspan><tspan x="45" dy="-18">カ</tspan><tspan x="45" dy="-18">√</tspan><tspan x="45" dy="-18">シ</tspan><tspan x="45" dy="-18">△</tspan><tspan x="45" dy="-18">エ</tspan><tspan x="45" dy="-18">∞</tspan><tspan x="45" dy="-18">オ</tspan><tspan x="45" dy="-18">≠</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 100" to="0 -300" dur="5.5s" repeatCount="indefinite"/>
   </text>
-  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.20">
-    <tspan x="130" y="300">0</tspan><tspan x="130" dy="-18">1</tspan><tspan x="130" dy="-18">0</tspan><tspan x="130" dy="-18">0</tspan><tspan x="130" dy="-18">1</tspan><tspan x="130" dy="-18">1</tspan><tspan x="130" dy="-18">0</tspan><tspan x="130" dy="-18">1</tspan><tspan x="130" dy="-18">0</tspan><tspan x="130" dy="-18">1</tspan><tspan x="130" dy="-18">1</tspan><tspan x="130" dy="-18">0</tspan><tspan x="130" dy="-18">1</tspan><tspan x="130" dy="-18">0</tspan><tspan x="130" dy="-18">1</tspan><tspan x="130" dy="-18">0</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 60" to="0 -320" dur="8s" repeatCount="indefinite"/>
+  <text font-family="'Courier New',monospace" font-size="15" fill="#00e676" opacity="0.20">
+    <tspan x="135" y="310">◊</tspan><tspan x="135" dy="-18">ケ</tspan><tspan x="135" dy="-18">∫</tspan><tspan x="135" dy="-18">コ</tspan><tspan x="135" dy="-18">±</tspan><tspan x="135" dy="-18">サ</tspan><tspan x="135" dy="-18">€</tspan><tspan x="135" dy="-18">↓</tspan><tspan x="135" dy="-18">ウ</tspan><tspan x="135" dy="-18">≈</tspan><tspan x="135" dy="-18">セ</tspan><tspan x="135" dy="-18">□</tspan><tspan x="135" dy="-18">キ</tspan><tspan x="135" dy="-18">∏</tspan><tspan x="135" dy="-18">ア</tspan><tspan x="135" dy="-18">÷</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 60" to="0 -340" dur="7.8s" repeatCount="indefinite"/>
   </text>
-  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.28">
-    <tspan x="220" y="300">1</tspan><tspan x="220" dy="-18">1</tspan><tspan x="220" dy="-18">0</tspan><tspan x="220" dy="-18">1</tspan><tspan x="220" dy="-18">0</tspan><tspan x="220" dy="-18">0</tspan><tspan x="220" dy="-18">1</tspan><tspan x="220" dy="-18">0</tspan><tspan x="220" dy="-18">1</tspan><tspan x="220" dy="-18">1</tspan><tspan x="220" dy="-18">0</tspan><tspan x="220" dy="-18">0</tspan><tspan x="220" dy="-18">1</tspan><tspan x="220" dy="-18">1</tspan><tspan x="220" dy="-18">0</tspan><tspan x="220" dy="-18">1</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 40" to="0 -300" dur="5s" repeatCount="indefinite"/>
+  <text font-family="'Courier New',monospace" font-size="15" fill="#39ff14" opacity="0.26">
+    <tspan x="240" y="310">×</tspan><tspan x="240" dy="-18">ソ</tspan><tspan x="240" dy="-18">イ</tspan><tspan x="240" dy="-18">≥</tspan><tspan x="240" dy="-18">カ</tspan><tspan x="240" dy="-18">¥</tspan><tspan x="240" dy="-18">ク</tspan><tspan x="240" dy="-18">←</tspan><tspan x="240" dy="-18">∞</tspan><tspan x="240" dy="-18">§</tspan><tspan x="240" dy="-18">ケ</tspan><tspan x="240" dy="-18">○</tspan><tspan x="240" dy="-18">ス</tspan><tspan x="240" dy="-18">∑</tspan><tspan x="240" dy="-18">エ</tspan><tspan x="240" dy="-18">◇</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 40" to="0 -310" dur="4.8s" repeatCount="indefinite"/>
   </text>
-  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.22">
-    <tspan x="310" y="300">0</tspan><tspan x="310" dy="-18">0</tspan><tspan x="310" dy="-18">1</tspan><tspan x="310" dy="-18">0</tspan><tspan x="310" dy="-18">1</tspan><tspan x="310" dy="-18">1</tspan><tspan x="310" dy="-18">0</tspan><tspan x="310" dy="-18">1</tspan><tspan x="310" dy="-18">1</tspan><tspan x="310" dy="-18">0</tspan><tspan x="310" dy="-18">0</tspan><tspan x="310" dy="-18">1</tspan><tspan x="310" dy="-18">0</tspan><tspan x="310" dy="-18">1</tspan><tspan x="310" dy="-18">0</tspan><tspan x="310" dy="-18">1</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 90" to="0 -350" dur="9s" repeatCount="indefinite"/>
+  <text font-family="'Courier New',monospace" font-size="15" fill="#00bfa5" opacity="0.18">
+    <tspan x="340" y="310">√</tspan><tspan x="340" dy="-18">△</tspan><tspan x="340" dy="-18">コ</tspan><tspan x="340" dy="-18">≤</tspan><tspan x="340" dy="-18">シ</tspan><tspan x="340" dy="-18">€</tspan><tspan x="340" dy="-18">ウ</tspan><tspan x="340" dy="-18">∏</tspan><tspan x="340" dy="-18">サ</tspan><tspan x="340" dy="-18">↑</tspan><tspan x="340" dy="-18">ソ</tspan><tspan x="340" dy="-18">±</tspan><tspan x="340" dy="-18">キ</tspan><tspan x="340" dy="-18">□</tspan><tspan x="340" dy="-18">オ</tspan><tspan x="340" dy="-18">エ</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 90" to="0 -360" dur="8.5s" repeatCount="indefinite"/>
   </text>
-  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.24">
-    <tspan x="410" y="300">1</tspan><tspan x="410" dy="-18">0</tspan><tspan x="410" dy="-18">0</tspan><tspan x="410" dy="-18">1</tspan><tspan x="410" dy="-18">1</tspan><tspan x="410" dy="-18">0</tspan><tspan x="410" dy="-18">1</tspan><tspan x="410" dy="-18">0</tspan><tspan x="410" dy="-18">0</tspan><tspan x="410" dy="-18">1</tspan><tspan x="410" dy="-18">1</tspan><tspan x="410" dy="-18">0</tspan><tspan x="410" dy="-18">1</tspan><tspan x="410" dy="-18">0</tspan><tspan x="410" dy="-18">1</tspan><tspan x="410" dy="-18">0</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 20" to="0 -290" dur="7s" repeatCount="indefinite"/>
+  <text font-family="'Courier New',monospace" font-size="15" fill="#00ff41" opacity="0.24">
+    <tspan x="440" y="310">カ</tspan><tspan x="440" dy="-18">≠</tspan><tspan x="440" dy="-18">ア</tspan><tspan x="440" dy="-18">◊</tspan><tspan x="440" dy="-18">セ</tspan><tspan x="440" dy="-18">∫</tspan><tspan x="440" dy="-18">ク</tspan><tspan x="440" dy="-18">→</tspan><tspan x="440" dy="-18">¥</tspan><tspan x="440" dy="-18">イ</tspan><tspan x="440" dy="-18">÷</tspan><tspan x="440" dy="-18">ケ</tspan><tspan x="440" dy="-18">△</tspan><tspan x="440" dy="-18">∞</tspan><tspan x="440" dy="-18">コ</tspan><tspan x="440" dy="-18">§</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 20" to="0 -300" dur="6.2s" repeatCount="indefinite"/>
   </text>
-  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.26">
-    <tspan x="510" y="300">0</tspan><tspan x="510" dy="-18">1</tspan><tspan x="510" dy="-18">1</tspan><tspan x="510" dy="-18">0</tspan><tspan x="510" dy="-18">0</tspan><tspan x="510" dy="-18">1</tspan><tspan x="510" dy="-18">0</tspan><tspan x="510" dy="-18">1</tspan><tspan x="510" dy="-18">1</tspan><tspan x="510" dy="-18">0</tspan><tspan x="510" dy="-18">1</tspan><tspan x="510" dy="-18">0</tspan><tspan x="510" dy="-18">0</tspan><tspan x="510" dy="-18">1</tspan><tspan x="510" dy="-18">1</tspan><tspan x="510" dy="-18">0</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 70" to="0 -330" dur="6.5s" repeatCount="indefinite"/>
+  <text font-family="'Courier New',monospace" font-size="15" fill="#00e676" opacity="0.22">
+    <tspan x="540" y="310">∑</tspan><tspan x="540" dy="-18">キ</tspan><tspan x="540" dy="-18">□</tspan><tspan x="540" dy="-18">サ</tspan><tspan x="540" dy="-18">ウ</tspan><tspan x="540" dy="-18">≈</tspan><tspan x="540" dy="-18">←</tspan><tspan x="540" dy="-18">エ</tspan><tspan x="540" dy="-18">ソ</tspan><tspan x="540" dy="-18">√</tspan><tspan x="540" dy="-18">×</tspan><tspan x="540" dy="-18">シ</tspan><tspan x="540" dy="-18">◇</tspan><tspan x="540" dy="-18">オ</tspan><tspan x="540" dy="-18">€</tspan><tspan x="540" dy="-18">ス</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 70" to="0 -340" dur="7.0s" repeatCount="indefinite"/>
   </text>
-  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.23">
-    <tspan x="610" y="300">1</tspan><tspan x="610" dy="-18">0</tspan><tspan x="610" dy="-18">1</tspan><tspan x="610" dy="-18">1</tspan><tspan x="610" dy="-18">0</tspan><tspan x="610" dy="-18">1</tspan><tspan x="610" dy="-18">0</tspan><tspan x="610" dy="-18">0</tspan><tspan x="610" dy="-18">1</tspan><tspan x="610" dy="-18">1</tspan><tspan x="610" dy="-18">0</tspan><tspan x="610" dy="-18">1</tspan><tspan x="610" dy="-18">0</tspan><tspan x="610" dy="-18">1</tspan><tspan x="610" dy="-18">0</tspan><tspan x="610" dy="-18">1</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 50" to="0 -310" dur="5.5s" repeatCount="indefinite"/>
+  <text font-family="'Courier New',monospace" font-size="15" fill="#39ff14" opacity="0.25">
+    <tspan x="640" y="310">≥</tspan><tspan x="640" dy="-18">○</tspan><tspan x="640" dy="-18">コ</tspan><tspan x="640" dy="-18">ア</tspan><tspan x="640" dy="-18">∏</tspan><tspan x="640" dy="-18">¥</tspan><tspan x="640" dy="-18">イ</tspan><tspan x="640" dy="-18">カ</tspan><tspan x="640" dy="-18">↓</tspan><tspan x="640" dy="-18">§</tspan><tspan x="640" dy="-18">ケ</tspan><tspan x="640" dy="-18">±</tspan><tspan x="640" dy="-18">ク</tspan><tspan x="640" dy="-18">∞</tspan><tspan x="640" dy="-18">サ</tspan><tspan x="640" dy="-18">セ</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 50" to="0 -320" dur="5.2s" repeatCount="indefinite"/>
   </text>
-  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.19">
-    <tspan x="710" y="300">0</tspan><tspan x="710" dy="-18">1</tspan><tspan x="710" dy="-18">0</tspan><tspan x="710" dy="-18">1</tspan><tspan x="710" dy="-18">0</tspan><tspan x="710" dy="-18">0</tspan><tspan x="710" dy="-18">1</tspan><tspan x="710" dy="-18">1</tspan><tspan x="710" dy="-18">0</tspan><tspan x="710" dy="-18">1</tspan><tspan x="710" dy="-18">0</tspan><tspan x="710" dy="-18">1</tspan><tspan x="710" dy="-18">1</tspan><tspan x="710" dy="-18">0</tspan><tspan x="710" dy="-18">1</tspan><tspan x="710" dy="-18">0</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 100" to="0 -360" dur="8.5s" repeatCount="indefinite"/>
+  <text font-family="'Courier New',monospace" font-size="15" fill="#00bfa5" opacity="0.19">
+    <tspan x="740" y="310">△</tspan><tspan x="740" dy="-18">∫</tspan><tspan x="740" dy="-18">オ</tspan><tspan x="740" dy="-18">ス</tspan><tspan x="740" dy="-18">≤</tspan><tspan x="740" dy="-18">€</tspan><tspan x="740" dy="-18">シ</tspan><tspan x="740" dy="-18">ウ</tspan><tspan x="740" dy="-18">◊</tspan><tspan x="740" dy="-18">→</tspan><tspan x="740" dy="-18">キ</tspan><tspan x="740" dy="-18">÷</tspan><tspan x="740" dy="-18">エ</tspan><tspan x="740" dy="-18">ソ</tspan><tspan x="740" dy="-18">□</tspan><tspan x="740" dy="-18">ア</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 100" to="0 -370" dur="8.0s" repeatCount="indefinite"/>
   </text>
-  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.25">
-    <tspan x="810" y="300">1</tspan><tspan x="810" dy="-18">1</tspan><tspan x="810" dy="-18">0</tspan><tspan x="810" dy="-18">0</tspan><tspan x="810" dy="-18">1</tspan><tspan x="810" dy="-18">0</tspan><tspan x="810" dy="-18">1</tspan><tspan x="810" dy="-18">1</tspan><tspan x="810" dy="-18">0</tspan><tspan x="810" dy="-18">0</tspan><tspan x="810" dy="-18">1</tspan><tspan x="810" dy="-18">0</tspan><tspan x="810" dy="-18">1</tspan><tspan x="810" dy="-18">1</tspan><tspan x="810" dy="-18">0</tspan><tspan x="810" dy="-18">1</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 30" to="0 -290" dur="6.2s" repeatCount="indefinite"/>
+  <text font-family="'Courier New',monospace" font-size="15" fill="#00ff41" opacity="0.23">
+    <tspan x="840" y="310">×</tspan><tspan x="840" dy="-18">カ</tspan><tspan x="840" dy="-18">∑</tspan><tspan x="840" dy="-18">ケ</tspan><tspan x="840" dy="-18">○</tspan><tspan x="840" dy="-18">イ</tspan><tspan x="840" dy="-18">サ</tspan><tspan x="840" dy="-18">≠</tspan><tspan x="840" dy="-18">¥</tspan><tspan x="840" dy="-18">ク</tspan><tspan x="840" dy="-18">ア</tspan><tspan x="840" dy="-18">←</tspan><tspan x="840" dy="-18">√</tspan><tspan x="840" dy="-18">コ</tspan><tspan x="840" dy="-18">△</tspan><tspan x="840" dy="-18">セ</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 30" to="0 -300" dur="5.8s" repeatCount="indefinite"/>
   </text>
-  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.21">
-    <tspan x="910" y="300">0</tspan><tspan x="910" dy="-18">0</tspan><tspan x="910" dy="-18">1</tspan><tspan x="910" dy="-18">1</tspan><tspan x="910" dy="-18">0</tspan><tspan x="910" dy="-18">1</tspan><tspan x="910" dy="-18">0</tspan><tspan x="910" dy="-18">0</tspan><tspan x="910" dy="-18">1</tspan><tspan x="910" dy="-18">1</tspan><tspan x="910" dy="-18">0</tspan><tspan x="910" dy="-18">1</tspan><tspan x="910" dy="-18">0</tspan><tspan x="910" dy="-18">1</tspan><tspan x="910" dy="-18">1</tspan><tspan x="910" dy="-18">0</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 80" to="0 -340" dur="7.8s" repeatCount="indefinite"/>
+  <text font-family="'Courier New',monospace" font-size="15" fill="#00e676" opacity="0.21">
+    <tspan x="940" y="310">◇</tspan><tspan x="940" dy="-18">≈</tspan><tspan x="940" dy="-18">ウ</tspan><tspan x="940" dy="-18">シ</tspan><tspan x="940" dy="-18">∏</tspan><tspan x="940" dy="-18">↑</tspan><tspan x="940" dy="-18">エ</tspan><tspan x="940" dy="-18">オ</tspan><tspan x="940" dy="-18">±</tspan><tspan x="940" dy="-18">§</tspan><tspan x="940" dy="-18">キ</tspan><tspan x="940" dy="-18">∞</tspan><tspan x="940" dy="-18">ス</tspan><tspan x="940" dy="-18">ソ</tspan><tspan x="940" dy="-18">€</tspan><tspan x="940" dy="-18">イ</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 80" to="0 -350" dur="7.5s" repeatCount="indefinite"/>
   </text>
-  <text font-family="'Courier New',monospace" font-size="14" fill="#8b949e" opacity="0.27">
-    <tspan x="1010" y="300">1</tspan><tspan x="1010" dy="-18">0</tspan><tspan x="1010" dy="-18">1</tspan><tspan x="1010" dy="-18">0</tspan><tspan x="1010" dy="-18">1</tspan><tspan x="1010" dy="-18">0</tspan><tspan x="1010" dy="-18">0</tspan><tspan x="1010" dy="-18">1</tspan><tspan x="1010" dy="-18">1</tspan><tspan x="1010" dy="-18">0</tspan><tspan x="1010" dy="-18">1</tspan><tspan x="1010" dy="-18">0</tspan><tspan x="1010" dy="-18">1</tspan><tspan x="1010" dy="-18">1</tspan><tspan x="1010" dy="-18">0</tspan><tspan x="1010" dy="-18">1</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 55" to="0 -315" dur="5.8s" repeatCount="indefinite"/>
+  <text font-family="'Courier New',monospace" font-size="15" fill="#39ff14" opacity="0.27">
+    <tspan x="1040" y="310">∫</tspan><tspan x="1040" dy="-18">□</tspan><tspan x="1040" dy="-18">ア</tspan><tspan x="1040" dy="-18">カ</tspan><tspan x="1040" dy="-18">≥</tspan><tspan x="1040" dy="-18">→</tspan><tspan x="1040" dy="-18">コ</tspan><tspan x="1040" dy="-18">ケ</tspan><tspan x="1040" dy="-18">¥</tspan><tspan x="1040" dy="-18">×</tspan><tspan x="1040" dy="-18">サ</tspan><tspan x="1040" dy="-18">◊</tspan><tspan x="1040" dy="-18">ク</tspan><tspan x="1040" dy="-18">÷</tspan><tspan x="1040" dy="-18">セ</tspan><tspan x="1040" dy="-18">ウ</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 55" to="0 -325" dur="5.0s" repeatCount="indefinite"/>
   </text>
-  <text font-family="'Courier New',monospace" font-size="14" fill="#7c8aaa" opacity="0.23">
-    <tspan x="1110" y="300">0</tspan><tspan x="1110" dy="-18">1</tspan><tspan x="1110" dy="-18">0</tspan><tspan x="1110" dy="-18">1</tspan><tspan x="1110" dy="-18">1</tspan><tspan x="1110" dy="-18">0</tspan><tspan x="1110" dy="-18">0</tspan><tspan x="1110" dy="-18">1</tspan><tspan x="1110" dy="-18">0</tspan><tspan x="1110" dy="-18">1</tspan><tspan x="1110" dy="-18">1</tspan><tspan x="1110" dy="-18">0</tspan><tspan x="1110" dy="-18">1</tspan><tspan x="1110" dy="-18">0</tspan><tspan x="1110" dy="-18">0</tspan><tspan x="1110" dy="-18">1</tspan>
-    <animateTransform attributeName="transform" type="translate" from="0 25" to="0 -285" dur="7.2s" repeatCount="indefinite"/>
+  <text font-family="'Courier New',monospace" font-size="15" fill="#00bfa5" opacity="0.17">
+    <tspan x="1130" y="310">∑</tspan><tspan x="1130" dy="-18">エ</tspan><tspan x="1130" dy="-18">△</tspan><tspan x="1130" dy="-18">イ</tspan><tspan x="1130" dy="-18">シ</tspan><tspan x="1130" dy="-18">≤</tspan><tspan x="1130" dy="-18">□</tspan><tspan x="1130" dy="-18">オ</tspan><tspan x="1130" dy="-18">←</tspan><tspan x="1130" dy="-18">キ</tspan><tspan x="1130" dy="-18">ソ</tspan><tspan x="1130" dy="-18">≠</tspan><tspan x="1130" dy="-18">○</tspan><tspan x="1130" dy="-18">ス</tspan><tspan x="1130" dy="-18">√</tspan><tspan x="1130" dy="-18">ア</tspan>
+    <animateTransform attributeName="transform" type="translate" from="0 25" to="0 -290" dur="6.8s" repeatCount="indefinite"/>
   </text>
+
+  <!-- Corner brackets -->
+  <g opacity="0.35" fill="none" stroke="#00ff41" stroke-width="2">
+    <polyline points="25,60 25,48 45,48"/>
+    <polyline points="1175,60 1175,48 1155,48"/>
+    <polyline points="25,150 25,162 45,162"/>
+    <polyline points="1175,150 1175,162 1155,162"/>
+  </g>
+
+  <!-- Footer label -->
+  <text x="600" y="163" font-family="'Courier New',monospace" font-size="10" fill="#00bfa5" opacity="0.4" text-anchor="middle">[ SIGNAL_TERMINATED // CONNECTION_CLOSED ]</text>
+
 </svg>
