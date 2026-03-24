@@ -10,12 +10,12 @@
   <a href="https://www.linkedin.com/in/sahil-mukadam/"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:s.mukadamwrk@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
   <a href="https://github.com/SahilMukadam"><img src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>
-  <img src="https://komarev.com/ghpvc/?username=SahilMukadam&style=flat-square&color=6c63ff" alt="Profile Views"/>
+  <img src="https://komarev.com/ghpvc/?username=SahilMukadam&style=flat-square&color=00ff41" alt="Profile Views"/>
 </p>
 
 <!-- Typing SVG — width increased to 850, NOT wrapped in a link so clicking does NOT redirect -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&multiline=true&repeat=true&width=850&height=100&lines=%3E+Training+models.+Engineering+pipelines.+Shipping+AI.;%3E+MSc+Computer+Science+(Distinction)+%7C+QMUL+London;%3E+From+data+to+decisions+%E2%80%94+end+to+end." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&multiline=true&repeat=true&width=850&height=100&lines=%3E+Training+models.+Engineering+pipelines.+Shipping+AI.;%3E+MSc+Computer+Science+(Distinction)+%7C+QMUL+London;%3E+From+data+to+decisions+%E2%80%94+end+to+end." alt="Typing SVG" />
 </p>
 
 ---
@@ -250,7 +250,7 @@ class SahilMukadam:
       <h3 align="center">🚦 Traffic Congestion & Digital Twin</h3>
       <p align="center">
         <a href="https://github.com/SahilMukadam/Traffic_Congestion_Management">
-          <img src="https://img.shields.io/badge/VIEW_REPO-6c63ff?style=for-the-badge&logo=github&logoColor=white"/>
+          <img src="https://img.shields.io/badge/VIEW_REPO-00ff41?style=for-the-badge&logo=github&logoColor=white"/>
         </a>
       </p>
       <p>
@@ -269,7 +269,7 @@ class SahilMukadam:
       <h3 align="center">⚖️ Legal/Policy Document Q&A — RAG</h3>
       <p align="center">
         <a href="https://github.com/SahilMukadam/Legal_Policy_Document_Q-A_RAG">
-          <img src="https://img.shields.io/badge/VIEW_REPO-6c63ff?style=for-the-badge&logo=github&logoColor=white"/>
+          <img src="https://img.shields.io/badge/VIEW_REPO-00ff41?style=for-the-badge&logo=github&logoColor=white"/>
         </a>
       </p>
       <p>
@@ -281,7 +281,6 @@ class SahilMukadam:
         <img src="https://img.shields.io/badge/ChromaDB-FF6F00?style=flat-square"/>
         <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
         <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=google&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Claude-8E75B2?style=flat-square&logo=claude&logoColor=white"/>
         <img src="https://img.shields.io/badge/60%2B_Tests-4CAF50?style=flat-square"/>
       </p>
     </td>
@@ -290,7 +289,7 @@ class SahilMukadam:
     <td width="50%">
       <h3 align="center">🧠 Neural Networks & Classification</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/DEEP_LEARNING-6c63ff?style=for-the-badge"/>
+        <img src="https://img.shields.io/badge/DEEP_LEARNING-00ff41?style=for-the-badge"/>
       </p>
       <p>
         Implemented neural networks, <b>Gaussian Mixture Models</b>, and logistic regression for supervised/unsupervised tasks. Solved XOR problems, clustered phoneme data, predicted disease progression. Optimised via learning rate tuning, regularisation, and feature scaling.
@@ -306,7 +305,7 @@ class SahilMukadam:
       <h3 align="center">🧘 Serenium: Alzheimer's Anxiety App</h3>
       <p align="center">
         <a href="https://www.figma.com/proto/Serenium">
-          <img src="https://img.shields.io/badge/VIEW_PROTOTYPE-6c63ff?style=for-the-badge&logo=figma&logoColor=white"/>
+          <img src="https://img.shields.io/badge/VIEW_PROTOTYPE-00ff41?style=for-the-badge&logo=figma&logoColor=white"/>
         </a>
       </p>
       <p>
@@ -314,8 +313,8 @@ class SahilMukadam:
       </p>
       <p>
         <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
-        <img src="https://img.shields.io/badge/UX Research-6c63ff?style=flat-square"/>
-        <img src="https://img.shields.io/badge/Prototyping-a9b1d6?style=flat-square"/>
+        <img src="https://img.shields.io/badge/UX Research-00ff41?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Prototyping-00bfa5?style=flat-square"/>
       </p>
     </td>
   </tr>
@@ -326,8 +325,8 @@ class SahilMukadam:
 ### `> model.evaluate(metrics)`
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SahilMukadam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=6c63ff&text_color=a9b1d6" alt="Top Languages" height="170"/>
-</p>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SahilMukadam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ff41&text_color=a9b1d6" alt="Top Languages" height="170"/>
+</p> 
 
 <!--
 ╔══════════════════════════════════════════════════════════════════════╗
@@ -343,26 +342,28 @@ class SahilMukadam:
 ║  🟢 STEP 4: Move Top Languages card into the side-by-side         ║
 ║             layout with GitHub Stats (replace the solo card        ║
 ║             above and delete the solo version)                     ║
-╚══════════════════════════════════════════════════════════════════════╝ -->
+╚══════════════════════════════════════════════════════════════════════╝
 
-<!-- --- STEP 1: GitHub Stats Card ---
+--- STEP 1: GitHub Stats Card ---
+Replace the solo Top Languages card above with this side-by-side layout:-->
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SahilMukadam&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0d1117&title_color=6c63ff&icon_color=6c63ff&text_color=a9b1d6" alt="GitHub Stats" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SahilMukadam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=6c63ff&text_color=a9b1d6" alt="Top Languages" height="170"/>
-</p>
+<!-- <p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=SahilMukadam&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0d1117&title_color=00ff41&icon_color=00ff41&text_color=a9b1d6" alt="GitHub Stats" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SahilMukadam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ff41&text_color=a9b1d6" alt="Top Languages" height="170"/>
+</p> -->
 
-<!-- --- STEP 2: Streak Stats --->
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SahilMukadam&theme=tokyonight&hide_border=true&background=0d1117&ring=6c63ff&fire=6c63ff&currStreakLabel=6c63ff" alt="GitHub Streak"/>
-</p>
-
-<!-- --- STEP 3: Activity Graph --->
+<!--- STEP 2: Streak Stats --->
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SahilMukadam&bg_color=0d1117&color=6c63ff&line=6c63ff&point=a9b1d6&area=true&area_color=6c63ff&hide_border=true" alt="Activity Graph" width="95%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SahilMukadam&theme=tokyonight&hide_border=true&background=0d1117&ring=00ff41&fire=00ff41&currStreakLabel=00ff41" alt="GitHub Streak"/>
 </p>
+
+<!--- STEP 3: Activity Graph --->
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SahilMukadam&bg_color=0d1117&color=00ff41&line=00ff41&point=a9b1d6&area=true&area_color=00ff41&hide_border=true" alt="Activity Graph" width="95%"/>
+</p>
+
 
 
 ---
